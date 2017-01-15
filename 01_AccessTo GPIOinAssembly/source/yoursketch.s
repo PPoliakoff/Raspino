@@ -1,11 +1,7 @@
 /* for Raspberry PI 2, or 3 */
 .equ ACTIVE_LED_PIN, 47  
-
 /*for Raspberry PI 1, or ZERO */
-/*
-.equ ACTIVE_LED_PIN, 16  
-*/
-
+/*.equ ACTIVE_LED_PIN, 16*/
 
 .include "digital_io.h"
 
@@ -37,8 +33,8 @@ loop:
     mov digitalWrite_value,#0
     bl digitalWrite
     
-    /* delay(1000) */
-    ldr delay_ms,=1000
+    /* delay(100) */
+    ldr delay_ms,=100
     bl delay
 
     loopEnd

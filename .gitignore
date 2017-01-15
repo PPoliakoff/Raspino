@@ -20,14 +20,15 @@
 *.so.*
 *.dylib
 
-# Executables
+# Executables and Debug files
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
-
-# Debug files
+*.img
+*.map
+*.list
 *.dSYM/
 *.su
